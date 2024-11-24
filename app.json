@@ -2,6 +2,11 @@
   "expo": {
     "name": "warren-stays-fit",
     "slug": "warren-stays-fit",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "extra": {
+      "eas": {
+        "projectId": "06e072ff-d30b-4145-ae4b-b793f156673e"
+      }
+    }
   }
 }
