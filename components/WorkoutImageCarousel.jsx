@@ -1,4 +1,5 @@
-import { FlatList, Image, StyleSheet } from 'react-native'
+import { Image } from 'expo-image'
+import { FlatList, StyleSheet } from 'react-native'
 
 export default function WorkoutImageCarousel({ pictures }) {
 

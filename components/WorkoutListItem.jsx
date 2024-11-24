@@ -1,6 +1,7 @@
-import { Image, Text, View } from "react-native"
+import { Text, View } from "react-native"
 import CurrentSetCounter from "./CurrentSetCounter"
 import { styles } from "../src/styling"
+import { Image } from "expo-image"
 
 export default function WorkoutListItem({ title, picture, repRangeLo, repRangeHi, setRangeLo, setRangeHi, restRangeLo, restRangeHi }) {
     return (

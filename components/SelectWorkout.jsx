@@ -10,7 +10,6 @@ export default function SelectWorkout() {
         ...mobility,
     ].sort((a, b) => b.title - a.title)
 
-
     const renderWorkoutItems = () => sortedCombinedArray.map((item) => <SelectWorkoutItem workoutObj={item} key={item.id} />)
 
     return (

@@ -1,7 +1,8 @@
 import { useState } from "react"
-import { Image, Pressable, StyleSheet, Text, View } from "react-native"
+import { Pressable, StyleSheet, Text, View } from "react-native"
 import { styles } from "../src/styling.js"
 import WorkoutImageCarousel from "./WorkoutImageCarousel"
+import { Image } from "expo-image"
 
 export default function MobilityListItem({ title, picture, duration, isDouble }) {
     const [isComplete, setIsComplete] = useState(false)
