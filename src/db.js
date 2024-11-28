@@ -1,5 +1,5 @@
-export const workouts = [
-    PUSH = {
+export const exercises = [
+    {
         id: 1,
         title: "Push",
         picture: "https://images.pexels.com/photos/2486792/pexels-photo-2486792.jpeg",
@@ -36,7 +36,7 @@ export const workouts = [
             },
         ]
     },
-    PULL = {
+    {
         id: 2,
         title: "Pull",
         picture: "https://images.pexels.com/photos/2268516/pexels-photo-2268516.jpeg",
@@ -73,7 +73,7 @@ export const workouts = [
             },
         ]
     },
-    LEGS = {
+    {
         id: 3,
         title: "Legs",
         picture: "https://images.pexels.com/photos/2158550/pexels-photo-2158550.jpeg",
@@ -120,7 +120,7 @@ export const workouts = [
             }
         ]
     },
-    UPPER_BODY = {
+    {
         id: 4,
         title: "Upper body",
         picture: "https://images.pexels.com/photos/2158402/pexels-photo-2158402.jpeg",
@@ -187,10 +187,7 @@ export const workouts = [
             }
         ]
     },
-]
-
-export const mobility = [
-    PULL_MOB = {
+    {
         id: 5,
         title: "Pull mobility",
         picture: "https://images.pexels.com/photos/2157885/pexels-photo-2157885.jpeg",
@@ -260,7 +257,7 @@ export const mobility = [
             }
         ]
     },
-    PUSH_MOB = {
+    {
         id: 6,
         title: "Push mobility",
         picture: "https://images.pexels.com/photos/5374862/pexels-photo-5374862.jpeg",
@@ -312,7 +309,7 @@ export const mobility = [
             }
         ]
     },
-    LEGS_MOB = {
+    {
         id: 7,
         title: "Legs mobility",
         picture: "https://images.pexels.com/photos/2158400/pexels-photo-2158400.jpeg",
@@ -374,7 +371,7 @@ export const mobility = [
             }
         ]
     },
-    UPPER_BODY_MOB = {
+    {
         id: 8,
         title: "Upper body mobility",
         picture: "https://images.pexels.com/photos/25626587/pexels-photo-25626587/free-photo-of-ai-generated-shapes.jpeg",
@@ -432,3 +429,7 @@ export const mobility = [
         ]
     },
 ]
+
+export function getExerciseById(id) {
+    return exercises.find((item) => item.id == id)
+}

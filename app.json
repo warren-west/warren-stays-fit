@@ -18,7 +18,6 @@
           "assets": [
             "./assets/images/exercises/australian-pullups.webp",
             "./assets/images/exercises/band-pullups.webp",
-            "./assets/images/home/pull.jpeg",
             "./assets/audio/chirp.wav",
             "./assets/audio/finished.wav"
           ]

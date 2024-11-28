@@ -37,7 +37,7 @@ export const styles = StyleSheet.create({
         color: colors.light,
         fontSize: 24,
         fontWeight: 'bold',
-        marginBottom: 20,
+        marginVertical: 20,
         alignSelf: "center"
     },
     lightText: {

@@ -1,13 +1,13 @@
 import { ScrollView, Text, View } from "react-native"
-import Timer from './Timer'
+// import Timer from './Timer'
 import WorkoutListItem from "./WorkoutListItem"
 import { styles } from "../src/styling"
+import { getExerciseById } from "../src/db.js"
 
-export default function WorkoutList({ route }) {
-    // get route params
-    const { selectedWorkout } = route.params
+export default function WorkoutList({ exerciseId }) {
+    const selectedExercise = getExerciseById(exerciseId)
 
-    const renderWorkoutListItems = () => selectedWorkout.exerciseList.map((item, idx) =>
+    const renderWorkoutListItems = () => selectedExercise.exerciseList.map((item, idx) =>
         <WorkoutListItem
             key={idx}
             title={item.workoutTitle}
@@ -21,12 +21,12 @@ export default function WorkoutList({ route }) {
         <>
             <View style={{flex: 5}}>
                 <ScrollView style={styles.workoutContainer}>
-                    <Text style={styles.headerText}>{selectedWorkout.title}</Text>
+                    <Text style={styles.headerText}>{selectedExercise.title}</Text>
                     {renderWorkoutListItems()}
                 </ScrollView>
             </View>
             <View style={styles.timerContainer}>
-                <Timer />
+                {/* <Timer /> */}
             </View>
         </>
     )
