@@ -8,17 +8,17 @@ export default function SelectWorkoutItem({ exerciseObj }) {
     const pathname = exerciseObj.title.endsWith(MOBILITY_SUFFIX) ? '/mobility' : '/workout'
 
     return (
-        <View style={_styles.container} >
-            <Link href={{
-                pathname,
-                params: { exerciseId: exerciseObj.id }
-            }}>
+        <Link style={_styles.link} href={{
+            pathname,
+            params: { exerciseId: exerciseObj.id }
+        }}>
+            <View style={_styles.container} >
                 <Image source={exerciseObj.picture + "?auto=compress&cs=tinysrgb&w=150"} style={styles.workoutItemImage} />
                 <Text style={styles.lightText} >
                     {exerciseObj.title}
                 </Text>
-            </Link>
-        </View>
+            </View>
+        </Link>
     )
 }
 
@@ -27,7 +27,9 @@ const _styles = StyleSheet.create({
         flex: 1,
         flexDirection: "row",
         alignItems: "center",
+    },
+    link: {
         marginLeft: 10,
-        marginBottom: 8,
+        marginBottom: 10,
     }
 })

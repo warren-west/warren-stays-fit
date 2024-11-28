@@ -1,14 +1,16 @@
-import { Text, View } from "react-native"
+import { Image, Text, View } from "react-native"
 import CurrentSetCounter from "./CurrentSetCounter"
 import { styles } from "../src/styling"
-import { Image } from "expo-image"
+import { getImage } from "../src/utils"
+// import { Image } from "expo-image"
+
 
 export default function WorkoutListItem({ title, picture, repRangeLo, repRangeHi, setRangeLo, setRangeHi, restRangeLo, restRangeHi }) {
     return (
         <>
             <View style={{ flex: 1, flexDirection: "row", marginLeft: 10, marginBottom: 10 }}>
                 <View style={{ flex: 2 }}>
-                    <Image source={picture} style={styles.workoutListItemImage} />
+                    <Image source={getImage(picture)} style={styles.workoutListItemImage} />
                 </View>
                 <View style={{ flex: 7, marginLeft: 10 }}>
                     <Text style={styles.lightBoldText}>{title}</Text>

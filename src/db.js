@@ -6,7 +6,7 @@ export const exercises = [
         exerciseList: [
             {
                 workoutTitle: "Elevated side-to-side pike push ups",
-                picture: "public/assets/images/exercises/pike-pushups.webp",
+                picture: "../assets/images/exercises/pike-pushups.webp",
                 repRangeLo: 3,
                 repRangeHi: 5,
                 setRangeLo: 3,
@@ -16,7 +16,7 @@ export const exercises = [
             },
             {
                 workoutTitle: "Dips",
-                picture: "public/assets/images/exercises/dips.webp",
+                picture: "../assets/images/exercises/dips.webp",
                 repRangeLo: 5,
                 repRangeHi: 8,
                 setRangeLo: 4,
@@ -26,7 +26,7 @@ export const exercises = [
             },
             {
                 workoutTitle: "Push ups",
-                picture: "public/assets/images/exercises/pushups.webp",
+                picture: "../assets/images/exercises/pushups.webp",
                 repRangeLo: 8,
                 repRangeHi: 15,
                 setRangeLo: 4,
@@ -43,7 +43,7 @@ export const exercises = [
         exerciseList: [
             {
                 workoutTitle: "10kg pull ups",
-                picture: "public/assets/images/exercises/pullups.webp",
+                picture: "../assets/images/exercises/pullups.webp",
                 repRangeLo: 3,
                 repRangeHi: 5,
                 setRangeLo: 3,
@@ -53,7 +53,7 @@ export const exercises = [
             },
             {
                 workoutTitle: "Band chin ups",
-                picture: "public/assets/images/exercises/band-pullups.webp",
+                picture: "../assets/images/exercises/band-pullups.webp",
                 repRangeLo: 5,
                 repRangeHi: 8,
                 setRangeLo: 4,
@@ -63,7 +63,7 @@ export const exercises = [
             },
             {
                 workoutTitle: "10kg Australian pull ups",
-                picture: "public/assets/images/exercises/australian-pullups.webp",
+                picture: "../assets/images/exercises/australian-pullups.webp",
                 repRangeLo: 8,
                 repRangeHi: 12,
                 setRangeLo: 4,
@@ -80,7 +80,7 @@ export const exercises = [
         exerciseList: [
             {
                 workoutTitle: "10kg pistols to bench",
-                picture: "public/assets/images/exercises/pistol-squats.webp",
+                picture: "../assets/images/exercises/pistol-squats.webp",
                 repRangeLo: 4,
                 repRangeHi: 8,
                 setRangeLo: 3,
@@ -90,7 +90,7 @@ export const exercises = [
             },
             {
                 workoutTitle: "10kg side lunges",
-                picture: "public/assets/images/exercises/side-squats.webp",
+                picture: "../assets/images/exercises/side-squats.webp",
                 repRangeLo: 8,
                 repRangeHi: 12,
                 setRangeLo: 3,
@@ -100,7 +100,7 @@ export const exercises = [
             },
             {
                 workoutTitle: "Plyo step ups",
-                picture: "public/assets/images/exercises/plyo-stepups.webp",
+                picture: "../assets/images/exercises/plyo-stepups.webp",
                 repRangeLo: 8,
                 repRangeHi: 12,
                 setRangeLo: 3,
@@ -110,7 +110,7 @@ export const exercises = [
             },
             {
                 workoutTitle: "Single leg Romanian deadlifts",
-                picture: "public/assets/images/exercises/single-leg-romanian-deadlift.webp",
+                picture: "../assets/images/exercises/single-leg-romanian-deadlift.webp",
                 repRangeLo: 8,
                 repRangeHi: 12,
                 setRangeLo: 3,
@@ -127,7 +127,7 @@ export const exercises = [
         exerciseList: [
             {
                 workoutTitle: "10kg pull ups",
-                picture: "public/assets/images/exercises/pullups.webp",
+                picture: "../assets/images/exercises/pullups.webp",
                 repRangeLo: 3,
                 repRangeHi: 5,
                 setRangeLo: 3,
@@ -137,7 +137,7 @@ export const exercises = [
             },
             {
                 workoutTitle: "Elevated side-to-side pike push ups",
-                picture: "public/assets/images/exercises/pike-pushups.webp",
+                picture: "../assets/images/exercises/pike-pushups.webp",
                 repRangeLo: 3,
                 repRangeHi: 5,
                 setRangeLo: 3,
@@ -147,7 +147,7 @@ export const exercises = [
             },
             {
                 workoutTitle: "Band chin ups",
-                picture: "public/assets/images/exercises/band-pullups.webp",
+                picture: "../assets/images/exercises/band-pullups.webp",
                 repRangeLo: 8,
                 repRangeHi: 10,
                 setRangeLo: 4,
@@ -157,7 +157,7 @@ export const exercises = [
             },
             {
                 workoutTitle: "Clap push ups",
-                picture: "public/assets/images/exercises/clap-pushups.webp",
+                picture: "../assets/images/exercises/clap-pushups.webp",
                 repRangeLo: 8,
                 repRangeHi: 10,
                 setRangeLo: 4,
@@ -167,7 +167,7 @@ export const exercises = [
             },
             {
                 workoutTitle: "Australian Pull Ups",
-                picture: "public/assets/images/exercises/australian-pullups.webp",
+                picture: "../assets/images/exercises/australian-pullups.webp",
                 repRangeLo: 8,
                 repRangeHi: 12,
                 setRangeLo: 5,
@@ -177,7 +177,7 @@ export const exercises = [
             },
             {
                 workoutTitle: "Band dips",
-                picture: "public/assets/images/exercises/dips.webp",
+                picture: "../assets/images/exercises/dips.webp",
                 repRangeLo: 8,
                 repRangeHi: 12,
                 setRangeLo: 5,
@@ -194,64 +194,64 @@ export const exercises = [
         exerciseList: [
             {
                 mobTitle: "Child pose",
-                picture: "public/assets/images/exercises/child.webp",
+                picture: "../assets/images/exercises/child.webp",
                 duration: 60,
                 isDouble: false
             },
             {
                 mobTitle: "Deep squat",
-                picture: "public/assets/images/exercises/deep-squat.webp",
+                picture: "../assets/images/exercises/deep-squat.webp",
                 duration: 60,
                 isDouble: false
             },
             {
                 mobTitle: "Shoulder flexion w/ stick",
-                picture: "public/assets/images/exercises/.webp",
+                picture: "../assets/images/exercises/child.webp",
                 duration: 60,
                 isDouble: false
             },
             {
                 mobTitle: "Shoulder stand",
-                picture: "public/assets/images/exercises/shoulder-stand.webp",
+                picture: "../assets/images/exercises/shoulder-stand.webp",
                 duration: 60,
                 isDouble: false
             },
             {
                 mobTitle: "Lat stretch",
                 picture: [
-                    "public/assets/images/exercises/lat-stretch.webp",
-                    "public/assets/images/exercises/lat-stretch2.webp",
+                    "../assets/images/exercises/lat-stretch.webp",
+                    "../assets/images/exercises/lat-stretch2.webp",
                 ],
                 duration: 60,
                 isDouble: true
             },
             {
                 mobTitle: "Pigeon pose",
-                picture: "public/assets/images/exercises/pigeon.webp",
+                picture: "../assets/images/exercises/pigeon.webp",
                 duration: 60,
                 isDouble: true
             },
             {
                 mobTitle: "Pistol stretch",
-                picture: "public/assets/images/exercises/.webp",
+                picture: "../assets/images/exercises/child.webp",
                 duration: 60,
                 isDouble: true
             },
             {
                 mobTitle: "Frog pose",
-                picture: "public/assets/images/exercises/frog.webp",
+                picture: "../assets/images/exercises/frog.webp",
                 duration: 60,
                 isDouble: false
             },
             {
                 mobTitle: "Forward roll",
-                picture: "public/assets/images/exercises/forward-roll.webp",
+                picture: "../assets/images/exercises/forward-roll.webp",
                 duration: 60,
                 isDouble: false
             },
             {
                 mobTitle: "Wrist extension & flexion",
-                picture: "public/assets/images/exercises/wrist-extension.webp",
+                picture: "../assets/images/exercises/wrist-extension.webp",
                 duration: 60,
                 isDouble: true
             }

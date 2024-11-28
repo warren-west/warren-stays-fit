@@ -69,7 +69,8 @@ export const styles = StyleSheet.create({
     },
     workoutListItemImage: {
         marginRight: 10,
-        width: "100%",
+        width: 75,
+        height: 75,
         borderRadius: 12,
         aspectRatio: 1,
     },
