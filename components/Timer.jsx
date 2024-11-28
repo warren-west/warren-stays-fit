@@ -3,8 +3,8 @@ import { Button, Pressable, Text, View } from 'react-native'
 import { CountdownCircleTimer } from 'react-native-countdown-circle-timer'
 import { calcColorTime } from '../src/utils'
 import { styles, COUNTDOWN_COLORS } from '../src/styling'
-import { useAssets } from 'expo-asset'
-import { useAudioPlayer } from 'expo-audio'
+// import { useAssets } from 'expo-asset'
+// import { useAudioPlayer } from 'expo-audio'
 
 export default function Timer({ isDouble = false }) {
     const DEFAULT_TIME = 60
@@ -15,19 +15,19 @@ export default function Timer({ isDouble = false }) {
     const [isPlaying, setIsPlaying] = useState(false)
 
     // timer sounds
-    const [assets, error] = useAssets([
-        require('../assets/audio/finished.wav'),
-        require('../assets/audio/chirp.wav'),
-    ])
-    const finishedAudio = useAudioPlayer(assets[0])
-    const chirpAudio = useAudioPlayer(assets[1])
+    // const [assets, error] = useAssets([
+    //     require('../assets/audio/finished.wav'),
+    //     require('../assets/audio/chirp.wav'),
+    // ])
+    // const finishedAudio = useAudioPlayer(assets[0])
+    // const chirpAudio = useAudioPlayer(assets[1])
 
     const handleToggleIsPlaying = () => setIsPlaying(!isPlaying)
 
     const handleTimerCompletes = () => {
         // when the timer completes
-        finishedAudio.play()
-        setIsPlaying(false)
+        // finishedAudio.play()
+        // setIsPlaying(false)
 
         if (isDouble)
             return [true, delay(12000), newInitialRemainingTime(60000)]
@@ -69,7 +69,8 @@ export default function Timer({ isDouble = false }) {
                     onComplete={() => handleTimerCompletes()}
                     onUpdate={(remainingTime) => {
                         if (remainingTime > 0 && remainingTime < 6)
-                            chirpAudio.play()
+                            // chirpAudio.play()
+                            return
                     }}
                 >
                     {({ remainingTime }) => <Text style={styles.timerText}>{remainingTime}</Text>}

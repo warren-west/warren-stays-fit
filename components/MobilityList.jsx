@@ -2,7 +2,7 @@ import { ScrollView, Text, View } from "react-native"
 import { styles } from "../src/styling.js"
 import MobilityListItem from "./MobilityListItem.jsx"
 import { getExerciseById } from '../src/db.js'
-// import Timer from "./Timer"
+import Timer from "./Timer"
 
 export default function MobilityList({ exerciseId }) {
     const selectedExercise = getExerciseById(exerciseId)
@@ -25,7 +25,7 @@ export default function MobilityList({ exerciseId }) {
                 </ScrollView>
             </View>
             <View style={styles.timerContainer}>
-                {/* <Timer /> */}
+                <Timer />
             </View>
         </>
     )
