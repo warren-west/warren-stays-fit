@@ -10,6 +10,7 @@ export const calcColorTime = function (countdownTime) {
 export const MOBILITY_SUFFIX = "mobility"
 
 const imageMap = [
+    [require("../assets/images/exercises/404.webp"), ""],
     [require("../assets/images/exercises/pike-pushups.webp"), "../assets/images/exercises/pike-pushups.webp"],
     [require("../assets/images/exercises/dips.webp"), "../assets/images/exercises/dips.webp"],
     [require("../assets/images/exercises/pushups.webp"), "../assets/images/exercises/pushups.webp"],
@@ -35,14 +36,13 @@ const imageMap = [
     [require("../assets/images/exercises/frog.webp"), "../assets/images/exercises/frog.webp"],
     [require("../assets/images/exercises/forward-roll.webp"), "../assets/images/exercises/forward-roll.webp"],
     [require("../assets/images/exercises/wrist-extension.webp"), "../assets/images/exercises/wrist-extension.webp"],
-
 ]
 
 export function getImage(picture) {
-    let result = imageMap.find(item => item[1] === picture)[0]
+    let result = imageMap.find(item => item[1] === picture)
     
     if (!result)
         return imageMap[0][0]
 
-    return result
+    return result[0]
 }

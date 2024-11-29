@@ -206,7 +206,7 @@ export const exercises = [
             },
             {
                 mobTitle: "Shoulder flexion w/ stick",
-                picture: "../assets/images/exercises/child.webp",
+                picture: "",
                 duration: 60,
                 isDouble: false
             },
@@ -233,7 +233,7 @@ export const exercises = [
             },
             {
                 mobTitle: "Pistol stretch",
-                picture: "../assets/images/exercises/child.webp",
+                picture: "",
                 duration: 60,
                 isDouble: true
             },
